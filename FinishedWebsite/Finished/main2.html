@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+          <video id="myVideo">
+            <source src="Y2Mate.is - lofi hip hop study - lofi hip-hop study beats mix [studysleephomework music]-hZ6bejCsJd0-1080p-1649512103523.mp4" type="video/mp4">
+          </video>
+        <div class="hero">
+                <div class="wrapper">
+                    <small>Welcome to my webpage</small>
+                    <div class="static-txt">I'm a</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Student</span></li>
+                            <li><span>Gamer</span></li>
+                            <li><span>Coder</span></li>
+                            <li><span>Freelancer</span></li>
+                        </ul>
+                    <div class="botón" id="button" onclick="this.classList.toggle('active')" onmouseup="music()">
+                        <div class="fondo" x="0" y="0" width="200" height="200"></div>
+                        <div class="icono" width="200" height="200">
+                          <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                          <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                        </div>
+                        <div class="puntero"></div>
+                      </div>
+                </div>
+                <div class="side-bar">
+                    <div class="social-links">
+                        <button class="discord" id="discord"></button>
+                        <button class="git" id="git"></button>
+                    </div>
+                </div>
+        </div>
+        <script>
+
+            let video = document.getElementById("myVideo");
+           function music(){
+                if (video.paused) {
+                    video.play();
+                 }             
+                else {
+                    video.pause();
+                } 
+            }
+            let discord = document.getElementById('discord')
+                discord.addEventListener('click', function(){
+                location.href = window.open('https://discord.gg/8zds8fEDNM')}) 
+            let git = document.getElementById('git')
+                git.addEventListener('click', function(){
+                location.href = window.open('https://github.com')
+                })
+            
+        </script>
+    </body>
+</html>
